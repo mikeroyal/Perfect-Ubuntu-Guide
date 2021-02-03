@@ -81,7 +81,7 @@ sudo apt install gnome-tweak-tool //let's you customize your desktop layout.
 ```sh
 sudo ufw enable  //enables ubuntu firewall
 sudo ufw status //checks status of firewall
-
+```
 # Getting Software
 
 [Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
@@ -142,6 +142,15 @@ sudo apt install gnome-software-plugin-flatpak
 [App Outlet](https://app-outlet.github.io/) is a Universal application store(Flatpaks, Snaps, and AppImages) inspired by the Linux App Store online service.
 
  <img src="https://user-images.githubusercontent.com/45159366/106686354-0095c780-657f-11eb-892b-659d3252d6e7.png">
+ 
+ ## Snaps
+
+[Snap Store](https://snapcraft.io/store) is a build and distribution service for Snap applications.
+
+[Snapcraft Forum](https://forum.snapcraft.io/)
+
+ <img src="https://user-images.githubusercontent.com/45159366/106686375-08ee0280-657f-11eb-9918-5385d8c09148.png">
+ <img src="https://user-images.githubusercontent.com/45159366/106686378-0a1f2f80-657f-11eb-83aa-37ac96c7b032.png">
 
 ## Flatpaks
 
@@ -150,15 +159,6 @@ sudo apt install gnome-software-plugin-flatpak
 [FlatHub Forum](https://discourse.flathub.org/)
 
  <img src="https://user-images.githubusercontent.com/45159366/106686365-055a7b80-657f-11eb-9b58-1de28abe2e5b.png">
-
-## Snaps
-
-[Snap Store](https://snapcraft.io/store) is a build and distribution service for Snap applications.
-
-[Snapcraft Forum](https://forum.snapcraft.io/)
-
- <img src="https://user-images.githubusercontent.com/45159366/106686375-08ee0280-657f-11eb-9918-5385d8c09148.png">
- <img src="https://user-images.githubusercontent.com/45159366/106686378-0a1f2f80-657f-11eb-83aa-37ac96c7b032.png">
 
 ## AppImages
 
