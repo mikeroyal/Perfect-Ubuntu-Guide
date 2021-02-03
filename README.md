@@ -6,6 +6,8 @@
 
 #### A guide on setting up your Ubuntu Desktop with all the essential Applications, Tools, and Games to make your experience with Ubuntu great! This may not be perfect guide for everyone but I feel there is at least one or more perfect solutions for New and Advanced Ubuntu users.
 
+**View/Download this guide as a PDF: [Ubuntu Guide.pdf](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/files/5915660/Ubuntu.Guide.pdf)**
+
 # Table of Contents
 
 1. [Getting Started](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-started)
