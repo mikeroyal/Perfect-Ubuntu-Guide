@@ -4,7 +4,7 @@
   Ubuntu Guide
 </h1>
 
-### A guide on setting up your Ubuntu Desktop with all the essential Applications, Tools, and Games to make your experience with Ubuntu great!  
+#### A guide on setting up your Ubuntu Desktop with all the essential Applications, Tools, and Games to make your experience with Ubuntu great! This may not be perfect guide for everyone but I feel there is at least one or more perfect solutions for New and Advanced Ubuntu users.
 
 # Table of Contents
 
@@ -28,6 +28,8 @@
 ## Additional Ubuntu Tools/Resources for Enterprise & Small Businesses
 
 [Ubuntu Community Hub](https://discourse.ubuntu.com/)
+
+[Ubuntu Tutorials](https://ubuntu.com/tutorials)
 
 [Multipass](https://multipass.run/) is a command line interface to launch, manage and generally test with instances of Linux(Ubuntu) in  a VM. It works on Linux, Windows and macOS.
 
@@ -301,25 +303,25 @@ sudo apt install cabextract libncurses5:armhf
 
 [How To Remotely Access GUI Applications Using Docker and Caddy on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-remotely-access-gui-applications-using-docker-and-caddy-on-ubuntu-20-04)
 
-[How To Install MySQL on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04]
+[How To Install MySQL on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
-[How To Set Up Mattermost on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-set-up-mattermost-on-ubuntu-20-04]
+[How To Set Up Mattermost on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-mattermost-on-ubuntu-20-04)
 
-[How To Set Up a Remote Desktop with X2Go on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-desktop-with-x2go-on-ubuntu-20-04]
+[How To Set Up a Remote Desktop with X2Go on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-desktop-with-x2go-on-ubuntu-20-04)
 
-[How To Install and Configure Drone on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-drone-on-ubuntu-20-04]
+[How To Install and Configure Drone on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-drone-on-ubuntu-20-04)
 
-[How To Create a Self-Signed SSL Certificate for Apache in Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-20-04]
+[How To Create a Self-Signed SSL Certificate for Apache in Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-20-04)
 
-[How To Install the Django Web Framework on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-20-04]
+[How To Install the Django Web Framework on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-20-04)
 
-[How To Install Jenkins on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04]
+[How To Install Jenkins on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04)
 
 [How To Use Traefik v2 as a Reverse Proxy for Docker Containers on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-use-traefik-v2-as-a-reverse-proxy-for-docker-containers-on-ubuntu-20-04)
 
 [How To Sandbox Processes With Systemd On Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-sandbox-processes-with-systemd-on-ubuntu-20-04)
 
-[How To Host a Website Using Cloudflare and Nginx on Ubuntu 20.04][https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-20-04]
+[How To Host a Website Using Cloudflare and Nginx on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-20-04)
 
 ## Contribute
 [Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
