@@ -411,7 +411,6 @@ sudo apt install qemu uml-utilities virt-manager gnome-boxes
 [How To Host a Website Using Cloudflare and Nginx on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-20-04)
 
 ## Contribute
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
 
 - [x] If would you like to contribute to this guide simply make a [Pull Request](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/pulls).
 
