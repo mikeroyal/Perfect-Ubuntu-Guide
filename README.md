@@ -186,7 +186,7 @@ sudo apt install gnome-software-plugin-flatpak
 
 # Gaming
 
-[Back to the Top]()
+[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
 
 ## Game Streaming
 
@@ -234,7 +234,7 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 
 ## Lutris
 
-[Lutris](https://lutris.net)is a gaming client for Linux. It gives you access to all your video games with the exception of the current console generation. Also, integrates nicely with other stores like GOG, Steam, Battle.net, Origin, Uplay and many other sources that allow you to import your existing game library and community maintained install scripts give you a completely automated setup.
+[Lutris](https://lutris.net) is a gaming client for Linux. It gives you access to all your video games with the exception of the current console generation. Also, integrates nicely with other stores like GOG, Steam, Battle.net, Origin, Uplay and many other sources that allow you to import your existing game library and community maintained install scripts give you a completely automated setup.
 
 [Add Epic Games Store](https://lutris.net/games/epic-games-store/)
 
@@ -256,7 +256,7 @@ sudo apt install cabextract libncurses5:armhf
 ```
 # Setting up a MacOS workspace
 
-[Back to the Top](https://github.com/mikeroyal/Pop_OS-Guide/blob/main/README.md#table-of-contents)
+[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
 
 **REQUIREMENTS**
 
@@ -282,7 +282,7 @@ sudo apt install qemu uml-utilities virt-manager dmg2img git wget libguestfs-too
  
 # Setting up a Windows 10 workspace
 
- [Back to the Top](https://github.com/mikeroyal/Pop_OS-Guide/blob/main/README.md#table-of-contents)
+ [Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
  
 **REQUIREMENTS**
 
