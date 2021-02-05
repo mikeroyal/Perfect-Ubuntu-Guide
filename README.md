@@ -14,9 +14,15 @@
 
 2. [Getting Software](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-software)
 
-3. [GNOME Extensions](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#gnome-extensions)
+3. [Gaming](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#gaming)
 
-4. [Advanced Topics](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#advanced-topics)
+4. [Setting up a macOS Workspace](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#setting-up-a-macos-workspace)
+
+5. [Setting up a Windows 10 Workspace](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#setting-up-a-windows-10-workspace)
+
+6. [GNOME Extensions](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#gnome-extensions)
+
+7. [Advanced Topics](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#advanced-topics)
 
 # Getting Started
 
@@ -88,9 +94,14 @@ sudo ufw status //checks status of firewall
 
 [Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
 
+## Ubuntu Software Center
+ <img src="https://user-images.githubusercontent.com/45159366/107094063-37582180-67bb-11eb-8fd8-a7eb1ca25e2c.png">
+
 **Note 1: All this software is also available in other popular Linux distributions such as [Debian](https://www.debian.org/), [Linux Mint](https://linuxmint.com/), [elementary OS](https://elementary.io/), [Pop!_OS](https://pop.system76.com/), [Fedora](https://getfedora.org), [Manjaro Linux](https://manjaro.org/), [EndeavourOS](https://endeavouros.com/) and [Arch Linux](https://archlinux.org/).**
 
 **Note 2: For new users not comfortable with using the command-line checkout the Essential Apps section to get started. Also, if you scroll down further you'll see other easy ways to get software applications through Flathub, Snap Store, and AppImages.**
+
+## Setting up GNOME Software Center(for those that don't want to use Ubuntu Software Center)
 
 ```sh
 sudo apt install gnome-software 
@@ -127,6 +138,7 @@ sudo apt install gnome-software-plugin-flatpak
 [Discord](https://discord.com/download)
 
 [CrossOver Linux®](https://www.codeweavers.com/crossover) is a Microsoft Windows compatibility layer(based on [WINE(Wine Is Not an Emulator)](https://www.winehq.org)). The CrossOver compatibility layer enables thousands of Windows-based applications to run on Linux, macOS, or Chrome OS.
+[WinApps for Linux](https://github.com/Fmstrat/winapps) is a program that runs Windows apps such as Microsoft Office & Adobe in Linux (Ubuntu/Fedora) and GNOME/KDE as if they were a part of the native OS, including Nautilus integration for right clicking on files of specific mime types to open them.
 
 [DaVinci Resolve video editor](https://www.blackmagicdesign.com/products/davinciresolve/) is complete video editing solution that combines professional 8K editing, color correction, visual effects and audio post production all in one software tool.
 
@@ -172,6 +184,9 @@ sudo apt install gnome-software-plugin-flatpak
 
  <img src="https://user-images.githubusercontent.com/45159366/106686382-0b505c80-657f-11eb-9d74-9a94ec0d0693.png">
 
+# Gaming
+
+[Back to the Top]()
 
 ## Game Streaming
 
@@ -182,6 +197,29 @@ sudo apt install gnome-software-plugin-flatpak
 <img src="https://user-images.githubusercontent.com/45159366/106686398-11463d80-657f-11eb-841a-d534829ccc3d.png">
 
 [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) is a Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play for Linux, FreeBSD, OpenBSD, Android, macOS, Windows, Nintendo Switch and potentially even more platforms.
+
+ 
+## Graphics Performance
+ 
+[GreenWithEnvy (GWE)](https://gitlab.com/leinardi/gwe) is a GTK system utility designed by Roberto Leinardi to provide information, control the fans and overclock your NVIDIA video card for better performance. Available in the Pop Shop as a Flatpak.
+ <img src="https://user-images.githubusercontent.com/45159366/107091994-89974380-67b7-11eb-85ed-eedec7e3dfbf.png">
+ 
+ [CoreCtrl](https://gitlab.com/corectrl/corectrl) is a free and open source Linux application that allows you to control your computer hardware with ease using application profiles for native and Windows applications, has basic CPU controls and full AMD GPUs controls (for both old and new models). 
+ 
+ ```sh
+ sudo add-apt-repository ppa:ernstp/mesarc
+ sudo apt install corectrl
+```
+<img src="https://user-images.githubusercontent.com/45159366/107092000-8b610700-67b7-11eb-86f7-6fcb3d017cd0.png">
+
+
+## Performance Benchmarks
+
+[Geekbench 5](https://www.geekbench.com/download/) is a cross-platform benchmark that measures your system's performance with the press of a button.
+
+[UNIGINE Superposition](https://benchmark.unigine.com/superposition) is an extreme performance and stability test for PC hardware: video card, power supply, cooling system.
+
+<img src="https://user-images.githubusercontent.com/45159366/107092007-8f8d2480-67b7-11eb-9c3f-a0cb02e6dfcd.png">
 
 ## Steam
 
@@ -207,9 +245,6 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 
 [WINE(Wine Is Not an Emulator)](https://www.winehq.org) is a compatibility layer capable of running Windows applications on several POSIX-compliant operating systems, such as Linux, macOS, & BSD. Instead of simulating internal Windows logic like a virtual machine or emulator, Wine translates Windows API calls into POSIX calls on-the-fly, eliminating the performance and memory penalties of other methods and allowing you to cleanly integrate Windows applications into your desktop.
 
-[Get Wine 6.0](https://www.winehq.org/announce/6.0)
-
-
 ## Winetricks
 
 [Winetricks](https://github.com/Winetricks/winetricks) is an easy way to work around problems in Wine.
@@ -219,9 +254,59 @@ this is needed to avoid adobeair error
 sudo sed -i 's|echo "\${arg%%=\*}"=\\""${arg### \*=}"\\"|echo \${arg%%=\*}=\\"\${arg### \*=}\\"|g' /usr/local/bin/winetricks
 sudo apt install cabextract libncurses5:armhf
 ```
-## WinApps for Linux
+# Setting up a MacOS workspace
 
-[WinApps for Linux](https://github.com/Fmstrat/winapps) is a program that runs Windows apps such as Microsoft Office & Adobe in Linux (Ubuntu/Fedora) and GNOME/KDE as if they were a part of the native OS, including Nautilus integration for right clicking on files of specific mime types to open them.
+[Back to the Top](https://github.com/mikeroyal/Pop_OS-Guide/blob/main/README.md#table-of-contents)
+
+**REQUIREMENTS**
+
+   - A modern Linux distribution
+   - QEMU > 2.11.1
+   - A CPU with Intel VT-x / AMD SVM support is required
+   - A CPU with SSE4.1 support is required for >= macOS Sierra
+   - A CPU with AVX2 support is required for >= macOS Mojave
+   - Internet access for the installation process
+
+
+```sh
+Open the terminal and run: 
+sudo apt install qemu uml-utilities virt-manager dmg2img git wget libguestfs-tools p7zip
+```
+
+[Sosumi](https://snapcraft.io/install/sosumi/ubuntu) is a app that let's you download and install macOS in a VM.
+ <img src="https://user-images.githubusercontent.com/45159366/107092234-0fb38a00-67b8-11eb-9f30-f4d16545624b.png">
+
+[OpenCore for macOS](https://dortania.github.io/OpenCore-Install-Guide/)
+
+ <img src="https://user-images.githubusercontent.com/45159366/107092246-15a96b00-67b8-11eb-91fb-27494c7f1d4f.jpg">
+ 
+# Setting up a Windows 10 workspace
+
+ [Back to the Top](https://github.com/mikeroyal/Pop_OS-Guide/blob/main/README.md#table-of-contents)
+ 
+**REQUIREMENTS**
+
+   - A modern Linux distribution
+   - QEMU > 2.11.1
+   - A CPU with Intel VT-x / AMD SVM support is required
+   - [WindowsGuestDrivers/Download Drivers - KVM](https://www.linux-kvm.org/page/WindowsGuestDrivers/Download_Drivers)
+   - Internet access for the installation process
+
+
+```sh
+Open the terminal and run: 
+sudo apt install qemu uml-utilities virt-manager gnome-boxes
+```
+
+[GNOME Boxes](https://wiki.gnome.org/Apps/Boxes) is an application that gives you access to virtual machines, running locally or remotely. It also allows you to connect to the display of a remote computer.
+
+ <img src="https://user-images.githubusercontent.com/45159366/107092256-1cd07900-67b8-11eb-9ae9-f389045dad26.png">
+ <img src="https://user-images.githubusercontent.com/45159366/107093639-72a62080-67ba-11eb-8d88-477929a5516b.png">
+ 
+ [OpenCore for Windows 10](https://dortania.github.io/OpenCore-Install-Guide/)
+ 
+ <img src="https://user-images.githubusercontent.com/45159366/107092270-222dc380-67b8-11eb-82cc-d41e9e8a39e0.png">
+
 
 # GNOME Extensions
 
@@ -267,7 +352,7 @@ sudo apt install cabextract libncurses5:armhf
 
 [WinTile: Windows 10 window tiling for GNOME](https://extensions.gnome.org/extension/1723/wintile-windows-10-window-tiling-for-gnome/)  is a hotkey driven window tiling system for GNOME that imitates the standard Win-Arrow keys of Windows 10, allowing you to maximize, maximize to sides, or 1/4 sized to corner across a single or multiple monitors using just Super+Arrow.
 
-[Gnome Extensions Sync](https://extensions.gnome.org/extension/1486/extensions-sync/)is a GNOME Shell extension that syncs gnome shell keybindings, tweaks settings and extensions with their configuration across all gnome installations.
+[Gnome Extensions Sync](https://extensions.gnome.org/extension/1486/extensions-sync/) is a GNOME Shell extension that syncs gnome shell keybindings, tweaks settings and extensions with their configuration across all gnome installations.
 
 [Tray Icons: Reloaded](https://extensions.gnome.org/extension/2890/tray-icons-reloaded/) is a GNOME Shell extension which bring back Tray Icons to top panel, with additional features.
 
