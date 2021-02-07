@@ -28,10 +28,15 @@
 
 [Ubuntu](https://ubuntu.com/) is a modern open source operating system on Linux for the enterprise server, desktop, cloud, and IoT developed by Canonical. Also, checkout the new [Ubuntu Desktop Installer](https://discourse.ubuntu.com/t/refreshing-the-ubuntu-desktop-installer/20659), which will be available to test in the 21.10 release (October 2021) with the Final version being available in the 22.04 LTS release(April 2022).
 
+[Ubuntu Flavours](https://www.ubuntu.com/download/flavours) is for those that prefer an alternative desktop environment such as KDE Plasma Desktop, MATE; or Xfce, you can download a Flavour for your preferred desktop environment and use that to install Ubuntu, pre-configured for the desktop environment of your choice.
+
 [Etcher](https://www.balena.io/etcher/) is an open source, cross-platform software that makes it easy to flash operating system images to a microSD card or USB device.
-
+ 
+<h1 align="center">
  <img src="https://user-images.githubusercontent.com/45159366/106686328-f5db3280-657e-11eb-9109-88a1df99983a.png">
-
+  <br />
+  Ubuntu Desktop
+</h1>
 
 ## Additional Ubuntu Tools/Resources for Enterprise & Small Businesses
 
@@ -62,6 +67,22 @@
 [Ubuntu on Azure](https://ubuntu.com/azure)
 
 
+## Installing Pop Shell on Ubuntu
+
+[Pop Shell](https://github.com/pop-os/shell) is a keyboard-driven layer for GNOME Shell which allows for quick and sensible navigation and management of windows. The core feature of Pop Shell is the addition of advanced tiling window management similar to i3wm.
+
+In order to use Pop Shell your system must have the following applications installed.
+
+ - GNOME Shell 3.36
+ - TypeScript 3.8
+ - GNU Make
+ 
+```sh
+sudo apt install node-typescript make
+git clone https://github.com/pop-os/shell
+cd shell
+./rebuild.sh
+```
 ## Setting Up Wayland on Ubuntu
 
 [Wayland](https://wayland.freedesktop.org) is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an [X application](https://www.x.org/wiki/XServer/), or a wayland client itself.
@@ -110,6 +131,7 @@ sudo apt install gnome-software-plugin-snap
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 ```
+ <img src="https://user-images.githubusercontent.com/45159366/107159312-fb03fd00-6943-11eb-933c-188617e63fd1.png">
 
 ## Essential Apps(depending on your workflow)
 
@@ -230,6 +252,13 @@ sudo apt install gnome-software-plugin-flatpak
 ```sh
 wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 ```
+[Proton](https://github.com/ValveSoftware/Proton/) is a tool for use with the Steam client which allows games which are exclusive to Windows to run on the Linux operating system. It uses Wine to facilitate this.
+
+## Enable Proton in Steam
+
+ - Click on “Steam” then “Settings” to open the Settings window at the far-left corner.
+ - On the “Settings” window, click on “Steam Play.” Ensure you check the “Enable Steam Play for supported files” and “Enable Steam Play for   all other titles” checkboxes. Lastly, select the Proton version you wish to use from the drop-down menu.
+ 
  <img src="https://user-images.githubusercontent.com/45159366/106686402-13100100-657f-11eb-9012-6bdac264a808.png">
 
 ## Lutris
