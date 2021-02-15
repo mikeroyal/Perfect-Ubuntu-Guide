@@ -147,15 +147,29 @@ sudo apt install gnome-software-plugin-flatpak
 
 [Zoom](https://zoom.us/download?os=linux)
 
+[Jitsi Meet](https://jitsi.org/jitsi-meet/) is a fully encrypted, 100% open source video conferencing solution.
+
+[Cisco Webex Web App](https://help.webex.com/en-us/n1pxgbz/Cisco-Webex-Web-App) is the web based veriosn of Cisco Webex video conferencing solution.
+
 [Slack](https://slack.com/downloads/linux)
 
-[Trello](https://trello.com/platforms)
+[Trello Web App](https://trello.com/platforms)
 
 [Skype](https://www.skype.com/en/get-skype/)
 
+[Discord](https://discord.com/download)
+
 [Spotify](https://www.spotify.com/us/download/linux/)
 
-[Discord](https://discord.com/download)
+[Apple Music(Web)](https://music.apple.com/) is the web app version of Apple Music that runs in Safari, Google Chrome and Mozilla Firefox.
+
+[Adobe Lighroom Online photo editor](https://lightroom.adobe.com) is an online web version of Adobe Photoshop Lightroom. Adobe account required to sign-in to app.
+
+[Adobe Spark(Web)](https://spark.adobe.com) is an applications let you make cool Social Graphics, Short Videos, and Web Pages. Adobe account required to sign-in to app.
+
+[Photopea](https://www.photopea.com/) is an advanced online image editor supporting PSD, XCF, Sketch, XD and CDR formats. (Adobe Photoshop, GIMP, Sketch App, Adobe XD, CorelDRAW).
+
+[Master PDF Editor](https://code-industry.net/masterpdfeditor/) is straightforward, easy to use application for working with PDF documents equipped with powerful multi-purpose functionality. With Master PDF Editor you can easily view, create and modify PDF documents. 
 
 [CrossOver Linux®](https://www.codeweavers.com/crossover) is a Microsoft Windows compatibility layer(based on [WINE(Wine Is Not an Emulator)](https://www.winehq.org)). The CrossOver compatibility layer enables thousands of Windows-based applications to run on Linux, macOS, or Chrome OS.
 
