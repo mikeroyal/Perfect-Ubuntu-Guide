@@ -149,7 +149,7 @@ sudo apt install gnome-software-plugin-flatpak
 
 [Jitsi Meet](https://jitsi.org/jitsi-meet/) is a fully encrypted, 100% open source video conferencing solution.
 
-[Cisco Webex Web App](https://help.webex.com/en-us/n1pxgbz/Cisco-Webex-Web-App) is the web based veriosn of Cisco Webex video conferencing solution.
+[Cisco Webex Web App](https://help.webex.com/en-us/n1pxgbz/Cisco-Webex-Web-App) is the web based version of Cisco Webex video conferencing solution.
 
 [Slack](https://slack.com/downloads/linux)
 
@@ -158,6 +158,8 @@ sudo apt install gnome-software-plugin-flatpak
 [Skype](https://www.skype.com/en/get-skype/)
 
 [Discord](https://discord.com/download)
+
+[TeamViewer](https://www.teamviewer.com/en/download/linux/)
 
 [Spotify](https://www.spotify.com/us/download/linux/)
 
