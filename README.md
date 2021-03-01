@@ -68,13 +68,13 @@
 
 [Ubuntu on WSL](https://wiki.ubuntu.com/WSL) is a wiki guide on getting started with the latest version of Ubuntu installed and setup on WSL for Windows 10.
 
-[Active Directory Integration on Ubuntu](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/files/6064814/Active_Directory_Integration_Ubuntu_Desktop_Final.pdf)
-
 [Ubuntu Pro for Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/canonical.0001-com-ubuntu-pro-focal?tab=Overview) is a premium image designed by Canonical optimized for production environments running on Azure. It includes security and compliance services, enabled by default, in a form suitable for small to large-scale Linux enterprise operations with no contract needed. 
 
 [Ubuntu on AWS](https://ubuntu.com/aws)
 
 [Ubuntu on Azure](https://ubuntu.com/azure)
+
+[Active Directory Integration on Ubuntu](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/files/6064814/Active_Directory_Integration_Ubuntu_Desktop_Final.pdf)
 
 
 ## Installing Pop Shell on Ubuntu
