@@ -859,10 +859,6 @@ commercially available industrial robot models that you can import, visualize, a
 
 [Language Understanding (LUIS) for Azure Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis)
 
-[ROS on Windows 10](https://ms-iot.github.io/ROSOnWindows/)
-
-[Windows ML ROS Node](https://ms-iot.github.io/ROSOnWindows/ROSAtMS/WinML.html)
-
 [Azure VM templates to bootstrap ROS and ROS 2 environments](https://ms-iot.github.io/ROSOnWindows/ROSAtMS/AzureVM.html)
 
 [Google Robotics Research](https://research.google/teams/brain/robotics/)
@@ -1348,9 +1344,6 @@ It is extended by a set of privacy-specific requirements, control objectives and
 [Appwrite](https://appwrite.io/) is a secure end-to-end backend server for Web, Mobile, and Flutter developers that is packaged as a set of Docker containers for easy deployment.
 
 [Fluro](https://github.com/theyakka/fluro) is a Flutter routing library that adds flexible routing options like wildcards, named parameters and clear route definitions.
-
-[Flame](https://flame-engine.org/) is a minimalistic Flutter game engine.
-
 
 # GNOME Extensions
 
