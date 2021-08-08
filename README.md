@@ -111,13 +111,6 @@ git clone https://github.com/pop-os/shell
 cd shell
 ./rebuild.sh
 ```
-## Setting Up Wayland on Ubuntu
-
-[Wayland](https://wayland.freedesktop.org) is a protocol for a compositor to talk to its clients as well as a C library implementation of that protocol. The compositor can be a standalone display server running on Linux kernel modesetting and evdev input devices, an [X application](https://www.x.org/wiki/XServer/), or a wayland client itself.
-
-**Wayland has been available in Ubuntu since the Ubuntu 17.10 release. Simply go to your login screen and click on Settings in the bottom right corner and select 'Ubuntu on Wayland'. Also, Ubuntu will likely start shipping Wayland by default with their 21.04 release(April 2021).**
-
- <img src="https://user-images.githubusercontent.com/45159366/106686332-f70c5f80-657e-11eb-944b-8cd85e131539.png">
 
 ## Vanilla GNOME in Ubuntu
 
@@ -143,14 +136,12 @@ sudo ufw status //checks status of firewall
 
 [Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
 
-## Ubuntu Software Center
- <img src="https://user-images.githubusercontent.com/45159366/107094063-37582180-67bb-11eb-8fd8-a7eb1ca25e2c.png">
 
 **Note 1: All this software is also available in other popular Linux distributions such as [Debian](https://www.debian.org/), [Linux Mint](https://linuxmint.com/), [elementary OS](https://elementary.io/), [Pop!_OS](https://pop.system76.com/), [Fedora](https://getfedora.org), [Manjaro Linux](https://manjaro.org/), [EndeavourOS](https://endeavouros.com/) and [Arch Linux](https://archlinux.org/).**
 
 **Note 2: For new users not comfortable with using the command-line checkout the Essential Apps section to get started. Also, if you scroll down further you'll see other easy ways to get software applications through Flathub, Snap Store, and AppImages.**
 
-## Setting up GNOME Software Center(for those that don't want to use Ubuntu Software Center)
+## GNOME Software Center
 
 ```sh
 sudo apt install gnome-software 
@@ -2115,10 +2106,10 @@ SSH: Secure shell is an encrypted protocol implemented in the application layer 
 
 ## Contribute
 
-- [x] If would you like to contribute to this guide simply make a [Pull Request](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/pulls).
+- [x] If would you like to contribute to this guide simply make a [Pull Request](https://github.com/mikeroyal/Zorin-OS-Guide/pulls).
 
 
 ## License
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
+[Back to the Top](https://github.com/mikeroyal/Zorin-OS-Guide/blob/main/README.md#table-of-contents)
 
 Distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) Public License](https://creativecommons.org/licenses/by/4.0/).
