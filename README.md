@@ -58,11 +58,11 @@
 
 [Etcher](https://www.balena.io/etcher/) is an open source, cross-platform software that makes it easy to flash operating system images to a microSD card or USB device.
  
-<h1 align="center">
+<h3 align="center">
  <img src="https://user-images.githubusercontent.com/45159366/106686328-f5db3280-657e-11eb-9109-88a1df99983a.png">
   <br />
   Ubuntu Desktop
-</h1>
+</h3>
 
 ## Additional Ubuntu Tools/Resources for Enterprise & Small Businesses
 
