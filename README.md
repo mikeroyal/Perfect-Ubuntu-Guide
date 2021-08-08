@@ -129,7 +129,7 @@ sudo apt install gnome-tweak-tool //let's you customize your desktop layout.
 ## Enable Firewall
 
 ```sh
-sudo ufw enable  //enables ubuntu firewall
+sudo ufw enable  //enables firewall
 sudo ufw status //checks status of firewall
 ```
 # Getting Software
