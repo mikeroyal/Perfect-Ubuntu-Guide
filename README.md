@@ -69,7 +69,7 @@
   Ubuntu Desktop
 </h3>
 
-## Additional Ubuntu Tools and Resources for Enterprise & Small Businesses
+## Additional Ubuntu Tools & Resources for Enterprise & Small Businesses
 
 [Ubuntu Community Hub](https://discourse.ubuntu.com/)
 
