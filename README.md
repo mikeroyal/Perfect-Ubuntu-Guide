@@ -69,7 +69,7 @@
   Ubuntu Desktop
 </h3>
 
-## Additional Ubuntu Tools/Resources for Enterprise & Small Businesses
+## Additional Ubuntu Tools and Resources for Enterprise & Small Businesses
 
 [Ubuntu Community Hub](https://discourse.ubuntu.com/)
 
@@ -165,7 +165,7 @@ sudo apt install gnome-software-plugin-snap
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 ```
- <img src="https://user-images.githubusercontent.com/45159366/107159312-fb03fd00-6943-11eb-933c-188617e63fd1.png">
+ <img src="https://user-images.githubusercontent.com/45159366/145691816-6445caec-5608-4022-bff2-353cfb728c66.png">
 
 ## Essential Apps(depending on your workflow)
 
