@@ -62,7 +62,7 @@
 [Ubuntu Flavours](https://www.ubuntu.com/download/flavours) is for those that prefer an alternative desktop environment such as [KDE Plasma Desktop](https://kubuntu.org/), [MATE](https://ubuntu-mate.org/), [Xfce](https://xubuntu.org/), [LXQt](https://lubuntu.me/), [Budgie](https://ubuntubudgie.org/), and [UKUI](https://www.ubuntukylin.com/) you can download a Flavour for your preferred desktop environment and use that to install Ubuntu, pre-configured for the desktop environment of your choice.
  
 <h3 align="center">
- <img src="https://user-images.githubusercontent.com/45159366/159085199-9362ee4d-bee5-4aac-8b01-b9a8e0afe5a5.png">
+ <img src="https://user-images.githubusercontent.com/45159366/164793005-67371e3c-d74d-4b40-9fd1-b9a71bd4172a.png">
   <br />
   Ubuntu Desktop
 </h3>
