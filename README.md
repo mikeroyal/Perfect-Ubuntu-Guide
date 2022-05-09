@@ -17,6 +17,9 @@
 
 1. [Getting Started](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-started)
 
+   - [Additional Ubuntu Tools & Resources for Enterprise & Small Businesses](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/edit/main/README.md#additional-ubuntu-tools--resources-for-enterprise--small-businesses)
+   - [Removing Snap and adding Flatpak support](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/edit/main/README.md#removing-snap-and-adding-flatpak-support)
+
 2. [Getting Software](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-software)
 
 3. [Gaming](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#gaming)
@@ -81,6 +84,10 @@
 
 [Ubuntu Tutorials](https://ubuntu.com/tutorials)
 
+[FreeRDP](https://github.com/FreeRDP/FreeRDP) is a free remote desktop protocol library and clients.
+
+[apt-get](https://github.com/wimpysworld/deb-get) is a tool that provides functionality for .debs published in 3rd party repositories or via direct download. It works on Ubuntu and derivative distributions. 
+
 [ZFS](https://docs.oracle.com/cd/E19253-01/819-5461/zfsover-2/) is an enterprise-ready open source file system and volume manager with unprecedented flexibility and an uncompromising commitment to data integrity.
 
 [OpenZFS](https://openzfs.org/wiki/Main_Page ) is an open-source storage platform. It includes the functionality of both traditional file systems and volume manager. It has many advanced features including:
@@ -113,6 +120,16 @@
 
 [Active Directory Integration on Ubuntu](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/files/6064814/Active_Directory_Integration_Ubuntu_Desktop_Final.pdf)
 
+## Removing Snap and adding Flatpak support
+
+[Unsnap](https://github.com/popey/unsnap) is a tool to quickly migrate from using snap packages to flatpaks.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/167506753-17c62a29-ce7e-4556-a90f-9996aa73a92e.png">
+  <br />
+</p>
+
+Unsnap running in the terminal. Credit: [Alan Pope](https://github.com/popey/)
 
 ## Installing Pop Shell on Ubuntu
 
@@ -120,7 +137,7 @@
 
 In order to use Pop Shell your system must have the following applications installed.
 
- - GNOME Shell 3.36
+ - GNOME Shell 3.36 or later
  - TypeScript 3.8
  - GNU Make
  
@@ -136,7 +153,7 @@ cd shell
 ```sh
 sudo apt install gnome-session
 ```
-**Complete this process by Logginh out of the system then will click on the settings button in bottom right corner and choose 'GNOME on Xorg'. After that just log back into your system and you will a Vanilla GNOME layout for your Ubuntu system.**
+**Complete this process by Logging out of the system then will click on the settings button in bottom right corner and choose 'GNOME on Xorg'. After that just log back into your system and you will a Vanilla GNOME layout for your Ubuntu system.**
 
 
 ## GNOME Tweaks
