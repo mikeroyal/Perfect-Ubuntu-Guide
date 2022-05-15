@@ -355,7 +355,8 @@ sudo apt install gnome-software-plugin-flatpak
 **Or**
 
 ```sh
-wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb```
+wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+```
 
 [Steam Remote Play Together](https://store.steampowered.com/remoteplay/#together) is a steam service that let's you share your Steam local multi-player games with friends over the internet, for free. Using Remote Play Together, one player owns and runs the game, then up to four players can join.
 [Proton](https://github.com/ValveSoftware/Proton/) is a tool for use with the Steam client which allows games which are exclusive to Windows to run on the Linux operating system. It uses Wine to facilitate this.
