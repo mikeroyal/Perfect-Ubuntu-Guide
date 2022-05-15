@@ -17,8 +17,9 @@
 
 1. [Getting Started](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-started)
 
-   - [Additional Ubuntu Tools & Resources for Enterprise & Small Businesses](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/edit/main/README.md#additional-ubuntu-tools--resources-for-enterprise--small-businesses)
-   - [Removing Snap and adding Flatpak support](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/edit/main/README.md#removing-snap-and-adding-flatpak-support)
+   - [Additional Ubuntu Tools & Resources for Enterprise & Small Businesses](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#additional-ubuntu-tools--resources-for-enterprise--small-businesses)
+   - [Removing Snap and adding Flatpak support](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#removing-snap-and-adding-flatpak-support)
+   - [Setting up PipeWire for Ubuntu/Debian](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#setting-up-pipewire-for-ubuntudebian)
 
 2. [Getting Software](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-software)
 
@@ -130,6 +131,51 @@
 </p>
 
 Unsnap running in the terminal. Credit: [Alan Pope](https://github.com/popey/)
+
+## Setting up PipeWire for Ubuntu/Debian
+
+**Note:** For those using Pop!_OS 22.04 or later PipeWire is already setup by default.
+
+**Add PipeWire PPA**
+
+```$ sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream```
+
+**Install the pipewire-audio-client-libraries and additional libraries to use Bluetooth, GStreamer, or JACK devices with your Ubuntu/Debian system.**
+ 
+ ```$ sudo apt update```
+  ```  $ sudo apt install pipewire pipewire-audio-client-libraries gstreamer1.0-pipewire libpipewire-0.3-{0,dev,modules} libspa-0.2-{bluetooth,dev,jack,modules} pipewire{,-{audio-client-libraries,pulse,media-session,bin,locales,tests}}```
+
+**After installation has completed, run the following command to reload the daemon in systemd.**
+
+```$ systemctl --user daemon-reload```
+
+**Disable PulseAudio in Ubuntu. It will no longer be needed, since we are using PipeWire.**
+
+```$ systemctl --user --now disable pulseaudio.service pulseaudio.socket```
+
+**PulseAudio is disabled, we can start PipeWire and enable it to run automatically upon system boot.**
+
+```$ systemctl --user --now enable pipewire pipewire-pulse```
+
+**Run the following command to ensure that PipeWire is running.**
+
+```$ pactl info```
+
+### Reverting Changes
+
+```$ sudo apt remove pipewire pipewire-audio-client-libraries gstreamer1.0-pipewire libpipewire-0.3-{0,dev,modules} libspa-0.2-{bluetooth,dev,jack,modules} pipewire{,-{audio-client-libraries,pulse,media-session,bin,locales,tests}}```
+
+**Reload the daemon in systemd.**
+
+```$ systemctl --user daemon-reload```
+
+**Re-enables the PulseAudio service after you do a system reboot.**
+
+```$ systemctl --user --now enable pulseaudio.service pulseaudio.socket```
+
+**Ensure that PulseAudio has been completely restored.**
+ 
+```$ pactl info```
 
 ## Installing Pop Shell on Ubuntu
 
@@ -321,6 +367,8 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 <p align="center">
 <img src="https://user-images.githubusercontent.com/45159366/108773214-dd718e80-7512-11eb-983b-ce192e5b30f2.png">
 </p>
+
+[ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) is a tool to install and manage [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam and [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom) for Lutris with this graphical user interface. Based on AUNaseef's [ProtonUp](https://github.com/AUNaseef/protonup), made with Python 3 and Qt 6.
 
 ## Lutris
 
