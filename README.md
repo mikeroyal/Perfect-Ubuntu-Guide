@@ -24,7 +24,7 @@
 2. [Getting Software](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-software)
 
 3. [Gaming](#gaming)
-   - [Linux Gaming Resources](Linux-Gaming-Resources)
+   - [Linux Gaming Resources](#Linux-Gaming-Resources)
    - [Upgrading the Linux Kernel](#Upgrading-the-Linux-Kernel)
    - [Setting up OBS Studio](#Setting-up-OBS-Studio)
       * [Useful OBS Studio 3rd party Plugins & Themes](#useful-obs-studio-3rd-party-plugins-and-themes)    
@@ -41,8 +41,7 @@
    - [Epic Games Store](#epic-games-store)
    - [Game Streaming](#game-streaming)
    - [Game Emulators](#game-emulators)
-   - [Hardware Performance(CPU, GPU, Gaming Peripherals)](h#hardware-performancecpu-gpu-gaming-peripherals)
-   
+   - [Hardware Performance(CPU, GPU, Gaming Peripherals)](#hardware-performancecpu-gpu-gaming-peripherals)
         * [NVIDIA](#NVIDIA)
         * [AMD](#AMD)
         * [Intel ARC](#Intel-Arc)
@@ -412,7 +411,7 @@ Then install Ubuntu Mainline Kernel Installer:
 When the tool is install and open the Ubuntu Mainline Kernel you will the different kernels you can install. I reccommend for stability that you have two kernels insatlled. By keeping the stable LTS kernel 5.15 and also installing the latest kernel, which would be Kernel 6.0.
 
 <p align="center">
- <img src="">
+ <img src="https://user-images.githubusercontent.com/45159366/195443149-168d6706-8384-4ef3-82db-bbda0ae783e8.png">
   <br />
   Ubuntu Mainline Kernel Tool
 </p>
@@ -435,7 +434,9 @@ Lastly, reboot your Ubuntu system so that it can take changes from the new kerne
 **Installing OBS Studio on Ubuntu:**
 
 ```sudo add-apt-repository ppa:obsproject/obs-studio```
+
 ```sudo apt update```
+
 ```sudo apt install ffmpeg obs-studio```
 
 **OR**
@@ -495,6 +496,14 @@ Lastly, reboot your Ubuntu system so that it can take changes from the new kerne
 
 ## Steam
 [Back to the Top](#table-of-contents)
+
+**Installing Steam**
+
+Open your terminal and enter:
+
+```sudo apt install steam-installer```
+
+**OR**
 
 [Steam Flatpak](https://flathub.org/apps/details/com.valvesoftware.Steam) available on FlatHub.
 
