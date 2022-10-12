@@ -42,10 +42,11 @@
    - [Game Streaming](#game-streaming)
    - [Game Emulators](#game-emulators)
    - [Hardware Performance(CPU, GPU, Gaming Peripherals)](h#hardware-performancecpu-gpu-gaming-peripherals)
-         * [NVIDIA](#NVIDIA)
-         * [AMD](#AMD)
-         * [Intel ARC](#Intel-Arc)
-         * [Gaming Peripherals](#Gaming-Peripherals)
+   
+        * [NVIDIA](#NVIDIA)
+        * [AMD](#AMD)
+        * [Intel ARC](#Intel-Arc)
+        * [Gaming Peripherals](#Gaming-Peripherals)
    - [Performance Benchmarks](#performance-benchmarks)
    - [WINE](#wine)
 
