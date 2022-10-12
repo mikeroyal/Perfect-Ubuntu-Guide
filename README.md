@@ -384,7 +384,7 @@ sudo apt install gnome-software-plugin-flatpak
 **Reasons to upgrade to the latest Linux Kernel:**
 
  * Better performance improvements.
- * Newest graphics drivers for new AMD, NVIDIA, and Intel ARC GPUS.
+ * Newest graphics drivers for new AMD and Intel ARC CPUS/GPUs.
 
 **Displays the current Kernel version for your system**
 
