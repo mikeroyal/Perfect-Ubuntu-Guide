@@ -23,17 +23,31 @@
 
 2. [Getting Software](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#getting-software)
 
-3. [Gaming](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#gaming)
-
-     - [Steam](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#steam)
-     - [ProtonDB](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#protondb)
-     - [Lutris](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#lutris)
-     - [GameHub](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#gamehub)
-     - [Epic Games Store](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#epic-games-store)
-     - [Game Streaming](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#game-streaming)
-     - [Game Emulators](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#game-emulators)
-     - [Graphics Performance](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#graphics-performance)
-     - [Performance Benchmarks](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#performance-benchmarks)
+3. [Gaming](#gaming)
+   - [Linux Gaming Resources](Linux-Gaming-Resources)
+   - [Upgrading the Linux Kernel](#Upgrading-the-Linux-Kernel)
+   - [Setting up OBS Studio](#Setting-up-OBS-Studio)
+      * [Useful OBS Studio 3rd party Plugins & Themes](#useful-obs-studio-3rd-party-plugins-and-themes)    
+   - [Steam](#steam)
+   - [ProtonDB](#protondb)
+   - [Lutris](#lutris)
+        * [Epic Games Store integration](#Epic-Games-Store-integration)
+        * [Blizzard Battle.net integration](#Blizzard-Battlenet-integration)
+        * [EA Play integration](#EA-Play-integration)
+        * [Origin integration](#Origin-integration)
+        * [Ubisoft Connect integration](#Ubisoft-Connect-integration)
+        * [GOG Galaxy integration](#GOG-Galaxy-integration)
+   - [GameHub](#gamehub)
+   - [Epic Games Store](#epic-games-store)
+   - [Game Streaming](#game-streaming)
+   - [Game Emulators](#game-emulators)
+   - [Hardware Performance(CPU, GPU, Gaming Peripherals)](h#hardware-performancecpu-gpu-gaming-peripherals)
+         * [NVIDIA](#NVIDIA)
+         * [AMD](#AMD)
+         * [Intel ARC](#Intel-Arc)
+         * [Gaming Peripherals](#Gaming-Peripherals)
+   - [Performance Benchmarks](#performance-benchmarks)
+   - [WINE](#wine)
 
 4. [Game Development](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#game-development)
 
@@ -344,32 +358,160 @@ sudo apt install gnome-software-plugin-flatpak
 
  <img src="https://user-images.githubusercontent.com/45159366/106686382-0b505c80-657f-11eb-9d74-9a94ec0d0693.png">
 
-# Gaming
 
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide/blob/main/README.md#table-of-contents)
+# Gaming
+[Back to the Top](#table-of-contents)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189517086-1d91abff-4a1b-4f7f-bd02-ffaf09178f5c.gif">
+  <br />
+</p>
+
+### Linux Gaming Resources
+ 
+ * [GamingOnLinux](https://www.gamingonlinux.com/)
+ * [BoilinSteam](https://boilingsteam.com/)
+ * [PCGamingWiki](https://www.pcgamingwiki.com/wiki/Home)
+ * [Rootgamer](https://rootgamer.com/about-us/)
+ * [Linux Gaming Central](https://linuxgamingcentral.com/)
+ * [Linux Game Cast](https://www.youtube.com/c/linuxgamecast)
+ * [r/linux_gaming subreddit](https://www.reddit.com/r/linux_gaming)
+ 
+## Upgrading the Linux Kernel 
+
+[Back to the Top](#table-of-contents)
+
+**Reasons to upgrade to the latest Linux Kernel:**
+
+ * Better performance improvements.
+ * Newest graphics drivers for new AMD, NVIDIA, and Intel ARC GPUS.
+
+**Displays the current Kernel version for your system**
+
+```uname -r```
+
+**“/proc/version”** file contains the current Linux kernel version, the version of GCC used to compile the kernel and the compile time of the Kernel. 
+
+```cat /proc/version```
+
+#### Starting the Upgrade Process
+
+Update your update your system:
+
+```sudo apt update```
+
+Add the [**cappelikan** repository](https://code.launchpad.net/~cappelikan/+archive/ubuntu/ppa) to your system as it is required for Ubuntu Main Kernel installer:
+
+```sudo add-apt-repository ppa:cappelikan/ppa -y```
+
+Then install Ubuntu Mainline Kernel Installer:
+
+```sudo apt install mainline -y```
+
+When the tool is install and open the Ubuntu Mainline Kernel you will the different kernels you can install. I reccommend for stability that you have two kernels insatlled. By keeping the stable LTS kernel 5.15 and also installing the latest kernel, which would be Kernel 6.0.
+
+<p align="center">
+ <img src="">
+  <br />
+  Ubuntu Mainline Kernel Tool
+</p>
+
+Lastly, reboot your Ubuntu system so that it can take changes from the new kernel installation:
+
+```sudo reboot```
+  
+## Setting up OBS Studio
+
+[Back to the Top](#table-of-contents)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/185703842-0926e10a-467a-471c-b5f6-b74df4e460d9.png">
+  <br />
+</p>
+
+[OBS (Open Broadcaster Software)](https://obsproject.com/) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding. OBS Studio added **native PipeWire and Wayland support in version 27**. 
+
+**Installing OBS Studio on Ubuntu:**
+
+```sudo add-apt-repository ppa:obsproject/obs-studio```
+```sudo apt update```
+```sudo apt install ffmpeg obs-studio```
+
+**OR**
+
+ [![OBS Studio Flatpak on Flathub](https://user-images.githubusercontent.com/45159366/185704745-32111c92-2687-49f6-9247-6e925f6a41a6.png)](https://flathub.org/apps/details/com.obsproject.Studio)
+ 
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/185704748-217443ac-57e3-4ab3-ba74-6d09c2fe62fb.png">
+  <br />
+  OBS Studio
+</p>
+
+ * [OBS PipeWire Audio Capture](https://github.com/dimtpap/obs-pipewire-audio-capture) is a plugin adds 3 sources for OBS Studio tocapture audio outputs, inputs and applications using PipeWire.
+ 
+ * [OBS Scale To Sound](https://github.com/dimtpap/obs-scale-to-sound) is a plugin for OBS Studio that adds a filter which makes a source scale based on the audio levels of any audio source you choose.
+ 
+  * [OBS Studio Fully-loaded](https://github.com/wimpysworld/obs-fully-loaded) is a script for Ubuntu/Debian-based systems that installs OBS Studio along with pre-loaded extra features and plugins. This project is developed and maintained by [Martin Wimpress](https://github.com/wimpysworld/).
+ 
+ ### Useful OBS Studio 3rd party plugins and themes.
+
+  * **[Advanced Scene Switcher](https://github.com/WarmUpTill/SceneSwitcher)** plugin; an automated scene switcher.
+  * **[Audio Pan](https://github.com/norihiro/obs-audio-pan-filter)** plugin; control stereo pan of audio source.
+  * **[Browser](https://github.com/obsproject/obs-browser)** plugin; CEF-based OBS Studio browser plugin.
+  * **[Directory Watch Media](https://github.com/exeldro/obs-dir-watch-media)** plugin; filter you can add to media source to load the oldest or newest file in a directory.
+  * **[Downstream Keyer](https://github.com/exeldro/obs-downstream-keyer)** plugin; add a Downstream Keyer dock.
+  * **[Dynamic Delay](https://github.com/exeldro/obs-dynamic-delay)** plugin; filter for dynamic delaying a video source.
+  * **[Freeze Filter](https://github.com/exeldro/obs-freeze-filter)** plugin; freeze a source using a filter.
+  * **[Gradient Source](https://github.com/exeldro/obs-gradient-source)** plugin; adding gradients as a Soource.
+  * **[GStreamer](https://github.com/fzwoch/obs-gstreamer)** plugins; feed GStreamer launch pipelines into OBS Studio and use GStreamer encoder elements.
+  * **[Move Transition](https://github.com/exeldro/obs-move-transition)** plugin; move source to a new position during scene transition.
+  * **[Multi Source Effect](https://github.com/norihiro/obs-multisource-effect)** plugin; provides a custom effect to render multiple sources.
+  * **[NDI](https://github.com/Palakis/obs-ndi)** plugin; Network A/V via NewTek's NDI.
+  * **[NvFBC](https://gitlab.com/fzwoch/obs-nvfbc)** plugin; screen capture via NVIDIA FBC API. Requires [NvFBC patches for Nvidia drivers](https://github.com/keylase/nvidia-patch) for consumer grade GPUs.
+  * **[Pulse App Capture](https://github.com/jbwong05/obs-pulseaudio-app-capture)** plugin; capture application audio from PulseAudio.
+  * **[Soundboard](https://github.com/cg2121/obs-soundboard)** plugin; adds a soundboard dock.
+  * **[Source Copy](https://github.com/exeldro/obs-source-copy)** plugin; adds copy and paste options to the tools menu.
+  * **[Source Dock](https://github.com/exeldro/obs-source-dock)** plugin; create a Dock for a source, which lets you see audio levels, change volume and control media. 
+  * **[Recursion Effect](https://github.com/exeldro/obs-recursion-effect)** plugin; recursion effect filter.
+  * **[Replay Source](https://github.com/exeldro/obs-replay-source)** plugin; slow motion replay async sources from memory.
+  * **[RGB Levels](https://github.com/petrifiedpenguin/obs-rgb-levels-filter)** plugin; simple filter to adjust RGB levels.
+  * **[RTSPServer](https://github.com/iamscottxu/obs-rtspserver/)** plugin; encode and publish to a RTSP stream.
+  * **[Scale to Sound](https://github.com/Qufyy/obs-scale-to-sound)** plugin; adds a filter which makes a source scale based on the audio levels of any audio source you choose
+  * **[Scene Collection Manager](https://github.com/exeldro/obs-scene-collection-manager)** plugin; filter, backup and restore Scene Collections.
+  * **[Scene Notes Dock](https://github.com/exeldro/obs-scene-notes-dock)** plugin; create a Dock for showing and editing notes for the current active scene.
+  * **[Source Record](https://github.com/exeldro/obs-source-record)** plugin; make sources available to record via a filter.
+  * **[Source Switcher](https://github.com/exeldro/obs-source-switcher)** plugin; to switch between a list of sources.
+  * **[Spectralizer](https://github.com/univrsal/spectralizer)** plugin; audio visualization using fftw.
+  * **[StreamFX](https://github.com/Xaymar/obs-StreamFX)** plugin; collection modern effects filters and transitions.
+  * **[Teleport](https://github.com/fzwoch/obs-teleport)** plugin; open NDI-like replacement.
+  * **[Text Pango](https://github.com/kkartaltepe/obs-text-pango)** plugin; Provides a text source rendered using Pango with multi-language support, emoji support, vertical rendering and RTL support.
+  * **[Text PThread](https://github.com/norihiro/obs-text-pthread)** plugin; Rich text source plugin with many advanced features.
+  * **[Time Warp Scan](https://github.com/exeldro/obs-time-warp-scan)** plugin; a time warp scan filter.
+  * **[Transition Table](https://github.com/exeldro/obs-transition-table)** plugin; customize scene transitions.
+  * **[Virtual Cam Filter](https://github.com/exeldro/obs-virtual-cam-filter)** plugin; make sources available to the virtual camera via a filter
+  * **[VNC Source](https://github.com/norihiro/obs-vnc)** plugin; VNC viewer that works as a source.
+  * **[Websockets](https://github.com/Palakis/obs-websocket)** plugin; remote-control OBS Studio through WebSockets, compatible with [StreamControl](https://play.google.com/store/apps/details?id=dev.t4ils.obs_remote&hl=en).  
 
 ## Steam
+[Back to the Top](#table-of-contents)
 
-[Get .deb file from the Steam store](https://store.steampowered.com/about/)
-
-**Or**
-
-```sh
-wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
-```
+[Steam Flatpak](https://flathub.org/apps/details/com.valvesoftware.Steam) available on FlatHub.
 
 [Steam Remote Play Together](https://store.steampowered.com/remoteplay/#together) is a steam service that let's you share your Steam local multi-player games with friends over the internet, for free. Using Remote Play Together, one player owns and runs the game, then up to four players can join.
+
 [Proton](https://github.com/ValveSoftware/Proton/) is a tool for use with the Steam client which allows games which are exclusive to Windows to run on the Linux operating system. It uses Wine to facilitate this.
+
+[ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) is a tool to install and manage [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam and [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom) for Lutris with this graphical user interface. Based on AUNaseef's [ProtonUp](https://github.com/AUNaseef/protonup), made with Python 3 and Qt 6.
 
 ## Enable Proton in Steam
 
  - Click on “Steam” then “Settings” to open the Settings window at the far-left corner.
  - On the “Settings” window, click on “Steam Play.” Ensure you check the “Enable Steam Play for supported files” and “Enable Steam Play for   all other titles” checkboxes. Lastly, select the Proton version you wish to use from the drop-down menu.
- 
+
  <img src="https://user-images.githubusercontent.com/45159366/106686402-13100100-657f-11eb-9012-6bdac264a808.png">
- 
+
 ## ProtonDB
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [ProtonDB](https://www.protondb.com) is a collection of over 100,000 gaming reports from other gamers as they test games with Proton on Linux and provide aggregate scores of how well games perform. A growing pool of suggestions provides tweaks that you can try to get games working while Proton continues development. In addition to this, you may explore the Steam game catalog on this site to browse and discover a wide range of titles that were previously unavailable for use on Linux.
 
@@ -381,19 +523,56 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 <img src="https://user-images.githubusercontent.com/45159366/108773214-dd718e80-7512-11eb-983b-ce192e5b30f2.png">
 </p>
 
-[ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt) is a tool to install and manage [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom) and [Luxtorpeda](https://github.com/luxtorpeda-dev/luxtorpeda) for Steam and [Wine-GE](https://github.com/GloriousEggroll/wine-ge-custom) for Lutris with this graphical user interface. Based on AUNaseef's [ProtonUp](https://github.com/AUNaseef/protonup), made with Python 3 and Qt 6.
-
 ## Lutris
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
-[Lutris](https://lutris.net) is a gaming client for Linux. It gives you access to all your video games with the exception of the current console generation. Also, integrates nicely with other stores like GOG, Steam, Battle.net, Origin, Uplay and many other sources that allow you to import your existing game library and community maintained install scripts give you a completely automated setup.
+[Lutris](https://lutris.net)is a gaming client for Linux. It gives you access to all your video games with the exception of the current console generation. Also, integrates nicely with other stores like GOG, Steam, Battle.net, Origin, Uplay and many other sources that allow you to import your existing game library and community maintained install scripts give you a completely automated setup.
+
+### Epic Games Store integration
+
+[Back to the Top](#table-of-contents)
 
 [Add Epic Games Store](https://lutris.net/games/epic-games-store/)
 
  <img src="https://user-images.githubusercontent.com/45159366/106686406-14412e00-657f-11eb-97c4-c80c6e25a374.png">
+ 
+ ### Blizzard Battle.net intgeration
+[Back to the Top](#table-of-contents)
 
-## GameHub
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Blizzard Battle.net](https://lutris.net/games/battlenet/) is an internet-based online gaming, digital distribution, and digital rights management platform developed by Activision and Blizzard Entertainment. Battle.net is the launcher for World of Warcraft, Diablo III, StarCraft II, Hearthstone, Heroes of the Storm, Overwatch and Call of Duty.
+
+<img src="https://user-images.githubusercontent.com/45159366/189614458-d51a15cb-d02d-4b1f-9e77-e712dcdb1d73.png">
+
+### EA Play integration
+[Back to the Top](#table-of-contents)
+
+[EA Play](https://lutris.net/games/ea-desktop/) is a subscription-based video game service from Electronic Arts for the Xbox One, Xbox Series X/S, PlayStation 4, PlayStation 5 and Microsoft Windows platforms, offering access to selected games published by Electronic Arts along with additional incentives.
+
+<img src="https://user-images.githubusercontent.com/45159366/189614466-476e0c4e-bab9-44bd-86c4-8aeadd739b63.png">
+
+### Origin integration
+[Back to the Top](#table-of-contents)
+ 
+[Origin](https://lutris.net/games/origin/) is an online gaming, digital distribution and digital rights management (DRM) platform developed by Electronic Arts that allows users to purchase games on the internet for PC and mobile platforms, and download them with the Origin client (formerly EA Download Manager, EA Downloader and EA Link).
+
+<img src="https://user-images.githubusercontent.com/45159366/189614468-49c4a05c-d6ca-4988-b3e6-10f0c71463d6.png">
+
+### Ubisoft Connect integration
+[Back to the Top](#table-of-contents)
+
+[Ubisoft Connect](https://lutris.net/games/ubisoft-connect/) is a digital distribution, digital rights management, multiplayer and communications service created by Ubisoft to provide an experience similar to the achievements/trophies offered by various other game companies.
+
+<img src="https://user-images.githubusercontent.com/45159366/189614471-422cbad8-1ae7-4f06-ad81-7f3b68550569.png">
+
+### GOG Galaxy integration
+[Back to the Top](#table-of-contents)
+
+[GOG GALAXY](https://lutris.net/games/gog-galaxy/) is a fully optional client to install, play and update your games.
+
+<img src="https://user-images.githubusercontent.com/45159366/189615528-385c01a8-f780-49e0-9502-db00d8082d9d.png">
+
+ ## GameHub
+[Back to the Top](#table-of-contents)
 
 [GameHub](https://github.com/tkashkin/GameHub) is a unified library for all your games. It allows you to store your games from different platforms into one program to make it easier for you to manage your games.
 
@@ -417,8 +596,9 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
    - [Humble Bundle (including Humble Trove)](https://www.humblebundle.com/)
    - [itch.io](https://itch.io/)
 
+
 ## Epic Games Store
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [Heroic](https://heroicgameslauncher.com/) is an Open Source Game Launcher for Linux, Windows and macOS (for both Native and Windows Games using Crossover). It supports launching games from the Epic Games Store using Legendary, a CLI alternative to the Epic Games Launcher. [Flatpak for Heroic Games Launcher](https://flathub.org/apps/details/com.heroicgameslauncher.hgl)
 
@@ -429,27 +609,25 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 </p>
 
 ## Game Streaming
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [Geforce NOW](https://www.nvidia.com/en-us/geforce-now/download/) is NVIDIA's Cloud Gaming Service.
 
  <img src="https://user-images.githubusercontent.com/45159366/106686391-0f7c7a00-657f-11eb-9d0b-1ebb4d385883.jpeg">
 
-[Moonlight Game Streaming](https://moonlight-stream.org/) is a program that let you stream from your PC games over the Internet with no configuration required. Stream from almost any device, whether you're in another room or miles away from your gaming rig.
+[Moonlight Game Streaming](https://moonlight-stream.org/) is a program that let you stream from your PC games over the Internet with no configuration required. Stream from almost any device, whether you're in another room or miles away from your gaming rig. [Sunshine](https://github.com/LizardByte/Sunshine) is a Game stream host for Moonlight that is a self-hosted, low latency, cloud gaming solution with support for AMD, Intel, and NVIDIA GPUs.
 
-<img src="https://user-images.githubusercontent.com/45159366/106686398-11463d80-657f-11eb-841a-d534829ccc3d.png">
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/106686398-11463d80-657f-11eb-841a-d534829ccc3d.png">
+</p>
 
 [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) is a Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play for Linux, FreeBSD, OpenBSD, Android, macOS, Windows, Nintendo Switch and potentially even more platforms. [Chiaki Flatpak](https://flathub.org/apps/details/re.chiaki.Chiaki)
 
 [Xbox Cloud Gaming](https://www.xbox.com/en-US/xbox-game-pass/cloud-gaming) is Microsoft's cloud-based Xbox game-streaming technology **(currently in Beta)**. **Play games like Forza Horizon 4, Halo 5: Guardians, Gears of War 4, Sea of Thieves, Cuphead, Red Dead Redemption 2, and 100+ other games on your mobile device or Chrome web browser**. Xbox Cloud Gaming does require an [Xbox Game Pass Ultimate](https://www.xbox.com/en-US/xbox-game-pass/cloud-gaming) subscription.
 
+ * [Xbox Cloud Gaming in Microsoft Edge with Steam Deck | Microsoft](https://support.microsoft.com/en-us/topic/xbox-cloud-gaming-in-microsoft-edge-with-steam-deck-43dd011b-0ce8-4810-8302-965be6d53296)
+
 <img src="https://user-images.githubusercontent.com/45159366/108111388-74d56e00-7049-11eb-8aeb-3e5d65f9e832.png">
-
-[Stadia](https://stadia.google.com/games) is Google's gaming platform that lets you instantly play your favorite video games on screens you already own. Game on TVs with Chromecast with Google TV, laptops, desktops, tablets or compatible phones. [Stadia Pro](https://stadia.google.com/) is a subscription($9.99 per month) that unlocks a growing collection of free games to play on Stadia. 
-
-<p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/162089471-3eb27f98-2366-4117-9af5-93bb126a2c37.png">
-</p>
 
 [Parsec](https://parsec.app/cloud-gaming) is a video game streaming platform, which offers a wide variety of games and genres to choose from and provides a high-quality and smooth gameplay. SParsec is developed in order to provide a high-quality smooth gameplay, same time to be free of all ads and in-game purchases.
 
@@ -464,9 +642,11 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 </p>
 
 ## Game Emulators
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [EmulationStation Desktop Edition (ES-DE)](https://www.es-de.org/) is a frontend application for browsing and launching games from your multi-platform game collection. It's  available for Unix/Linux, macOS(M1 & Intel) and Windows.
+
+[Pegasus](https://pegasus-frontend.org/) is a cross platform, customizable graphical frontend for launching emulators and managing your game library (especially retro games) and launching them from one place. It's focused on customizability, cross platform support (including embedded devices) and high performance.
 
 [RetroPie](https://retropie.org.uk/) is a frontend for emulators that allows you to turn your Raspberry Pi, ODroid C1/C2, or PC into a retro-gaming machine. It builds upon Raspbian, [EmulationStation](https://github.com/Aloshi/EmulationStation), RetroArch and many other projects to enable you to play your favourite Arcade, home-console, and classic PC games with the minimum set-up.
 
@@ -499,6 +679,8 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 
 [Flycast](https://github.com/flyinghead/flycast) is a multi-platform Sega Dreamcast, Naomi and Atomiswave emulator derived from reicast. [Flycast Flatpak](https://flathub.org/apps/details/org.flycast.Flycast)
 
+[DuckStation](https://www.duckstation.org/) is an simulator/emulator of the Sony PlayStation 1 console, focusing on playability, speed, and long-term maintainability. [Available as a Flatpak on Flathub](https://flathub.org/apps/details/org.duckstation.DuckStation).
+
 [PCSX2](https://pcsx2.net/) is a PlayStation 2 'emulator', a free program that tries to replicate the PlayStation 2 console to enable you to play PS2 games on your PC. [PCSX2 Flatpak](https://flathub.org/apps/details/net.pcsx2.PCSX2)
 
 [RPCS3](https://rpcs3.net/) is an experimental open-source Sony PlayStation 3 emulator and debugger written in C++ for Windows and Linux. RPCS3 started development in May of 2011 by its founders DH and Hykem. The emulator is currently capable of running over 1800 commercial titles powered by Vulkan and OpenGL. [RPCS3 Flatpak](https://flathub.org/apps/details/net.rpcs3.RPCS3)
@@ -510,7 +692,7 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 [Xenia](https://github.com/xenia-project/xenia) is an Xbox 360 Emulator.
 
 **Also checkout these subreddits for more great Game Emulators recommendations**
-  
+
    - [r/emulation](https://www.reddit.com/r/emulation/)
    - [r/emulations](https://www.reddit.com/r/emulators/)
    - [r/RetroArch](https://www.reddit.com/r/RetroArch/)
@@ -523,25 +705,160 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
    - [r/MAME](https://www.reddit.com/r/MAME/)
    - [r/EmuDev](https://www.reddit.com/r/EmuDev/)
    - [r/Roms](https://www.reddit.com/r/Roms/)
-  
- 
-## Graphics Performance
- [Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
- 
-[GreenWithEnvy (GWE)](https://gitlab.com/leinardi/gwe) is a GTK system utility designed by Roberto Leinardi to provide information, control the fans and overclock your NVIDIA video card for better performance. Available in the Pop Shop as a Flatpak.
+
+
+## Hardware Performance(CPU, GPU, Gaming Peripherals)
+[Back to the Top](#table-of-contents)
+
+### NVIDIA
+[Back to the Top](#table-of-contents)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189858113-0d681062-8bd5-4db9-b92b-71bec318f2f5.png">
+  <br />
+</p>
+
+ * [NVIDIA Linux Open GPU Kernel Module Source](https://github.com/NVIDIA/open-gpu-kernel-modules)
+
+[GreenWithEnvy (GWE)](https://gitlab.com/leinardi/gwe) is a GTK system utility designed by Roberto Leinardi to provide information, control the fans and overclock your NVIDIA video card for better performance. Available as a [Flatpak on FlatHub](https://flathub.org/apps/details/com.leinardi.gwe).
+
  <img src="https://user-images.githubusercontent.com/45159366/107091994-89974380-67b7-11eb-85ed-eedec7e3dfbf.png">
  
- [CoreCtrl](https://gitlab.com/corectrl/corectrl) is a free and open source Linux application that allows you to control your computer hardware with ease using application profiles for native and Windows applications, has basic CPU controls and full AMD GPUs controls (for both old and new models). 
+ ### AMD 
+ [Back to the Top](#table-of-contents)
  
- ```sh
- sudo add-apt-repository ppa:ernstp/mesarc
- sudo apt install corectrl
-```
-<img src="https://user-images.githubusercontent.com/45159366/107092000-8b610700-67b7-11eb-86f7-6fcb3d017cd0.png">
+ <p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/190588167-4fd0bd50-cd43-47f1-b28f-16f70a243549.png">
+  <br />
+</p>
+ 
+* **[AMD FidelityFX Super Resolution (FSR)](https://www.amd.com/en/technologies/radeon-software-fidelityfx)** is an open source, high-quality solution for producing high resolution frames from lower resolution inputs. FSR enables “practical performance” for costly render operations, such as hardware ray tracing for the AMD RDNA™ and AMD RDNA™ 2 architectures.
 
+* **[AMD FidelityFX Super Resolution (FSR) 2.0](https://github.com/GPUOpen-Effects/FidelityFX-FSR2)** is an open source, high-quality solution for producing high resolution frames from lower resolution inputs. It uses temporal data and optimized anti-aliasing to boost framerates in supported games while delivering similar or better image quality than native resolution.
+
+* **[AMD Open Source Driver for Vulkan®](https://github.com/GPUOpen-Drivers/AMDVLK)** is an open-source Vulkan driver for Radeon™ graphics adapters on Linux®. It is built on top of AMD's Platform Abstraction Library (PAL), a shared component that is designed to encapsulate certain hardware and OS-specific programming details for many of AMD's 3D and compute drivers. 
+
+* **[Vulkan® Memory Allocator (VMA)](https://gpuopen.com/vulkan-memory-allocator/)** is a library provides a simple and easy to integrate API to help you allocate memory for Vulkan® buffer and image storage. 
+
+* **[Radeon™ Raytracing Analyzer (RRA)](https://gpuopen.com/radeon-raytracing-analyzer/)** is a tool that investigates the performance of your raytracing applications and highlight potential bottlenecks.
+
+* **[Radeon™ GPU Profiler](https://gpuopen.com/rgp/)** is a low-level optimization tool that provides detailed information on Radeon™ GPUs.
+
+* **[Radeon™ GPU Analyzer](https://gpuopen.com/rga/)** is an offline compiler and performance analysis tool for DirectX®, Vulkan®, SPIR-V™, OpenGL®, and OpenCL™. It can be used together with [RGP](https://gpuopen.com/rgp/), [RMV](https://gpuopen.com/rmv/), and [RDP](https://gpuopen.com/rdp/).
+
+ * **[Radeon™ Developer Panel (RDP)](https://gpuopen.com/rdp/)** is an essential part of the Radeon™ Developer Tool Suite. It provides the communication channel that delivers requests to, and receives data from, the AMD Radeon™ driver.
+
+* **[Radeon™ Memory Visualizer (RMV)](https://gpuopen.com/learn/radeon-memory-visualizer-on-linux/)** is a powerful tool that allows users to analyze video memory usage on AMD Radeon GPUs.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/190555167-e1293b98-eaf1-4df0-815c-88569b8dfe23.png">
+  <br />
+  Radeon™ Memory Visualizer (RMV)
+</p>
+
+
+* **[CoreCtrl](https://gitlab.com/corectrl/corectrl)** is a free and open source Linux application that allows you to control your computer hardware with ease using application profiles for native and Windows applications, along with basic CPU controls and full AMD GPUs controls (for both old and new models). 
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/190553872-1111d52c-dc73-4868-8e27-60a8d0f57937.png">
+  <br />
+  CoreCtrl
+</p>
+
+### Intel ARC
+[Back to the Top](#table-of-contents)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/190093904-20680f0b-a387-4a48-9c43-de8d5f0b5d2e.png">
+  <br />
+</p>
+
+**Version requirements for DG2/Alchemist hardware on Linux:**
+
+* **[Linux Kernel 6.0 or newer](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git)**
+* **[Mesa 22.2 or newer](https://gitlab.freedesktop.org/mesa/mesa/-/tree/22.2)** for ANV Vulkan and Iris OpenGL will in turn work out-of-the-box with current cards when booting with the necessary kernel support in place.
+* **[Latest linux-firmware.git](https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git)** for the very latest GuC firmware support.
+
+**Note:** With Linux 6.0 the DG2 class support is not exposed by default but requires setting the **i915.force_probe=[PCI-ID] module option** to force the driver to initialize the graphics card. 
+
+**On Debian-based systems:**
+
+```sudo dmesg | grep -i i915```
+
+**On Arch Linux-based systems:**
+
+```su dmesg | grep -i i915```
+
+[Intel Xe Super Sampling (XeSS)](https://www.intel.com/content/www/us/en/products/docs/arc-discrete-graphics/xess.html) is a temporal image upscaling AI rendering technology that increases graphics performance similar to [NVIDIA's DLSS (Deep Learning Super Sampling)](https://developer.nvidia.com/dlss). Intel's Arc GPU architecture (Fall 2022) will have GPUs that feature dedicated Xe-cores to run XeSS. The GPUs will have Xe Matrix eXtenstions matrix (XMX) engines for hardware-accelerated AI processing. XeSS will be able to run on devices without XMX, including integrated graphics, though, the performance of XeSS will be lower on non-Intel graphics cards because it will be powered by [DP4a instruction](https://www.intel.com/content/dam/www/public/us/en/documents/reference-guides/11th-gen-quick-reference-guide.pdf).
+
+
+* [ Intel XeSS ML Upscaling | The Digital Foundry Tech Review | XeSS vs DLSS vs Native](https://www.youtube.com/watch?v=rfLwZy650s0)
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/190093928-ca15e58b-f830-47f5-b66b-19219d160178.png">
+  <br />
+</p>
+
+Intel ARC GPUs Overview. Credit: [Intel](https://www.intel.com/content/www/us/en/products/details/discrete-gpus/arc.html)
+
+### Gaming Peripherals
+[Back to the Top](#table-of-contents)
+
+[OpenRazer](https://openrazer.github.io/) is a collection of Linux drivers for Razer devices - providing kernel drivers, DBus services and Python bindings to interact with the DBus interface.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189784910-8704a50d-0a9b-454c-8a49-9f87127062b1.png">
+  <br />
+</p>
+
+[OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) is a network-based Software Development Kit, which allows third-party software to control all of your RGB. This allows for game integrations, music visualization, ambient lighting, and anything else you can imagine. It supports ASUS, ASRock, Corsair, G.Skill, Gigabyte, HyperX, MSI, Razer, ThermalTake, and more.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189850391-73936b95-8996-44f3-8d81-bd0938a379fd.png">
+  <br />
+</p>
+
+[GX52](https://gitlab.com/leinardi/gx52) is a GTK application designed to provide control for the LEDs and MFD of Logitech X52 and X52 Pro H.O.T.A.S.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189784925-ebe6c07f-bfe4-441d-b705-1dc737fbacdf.png">
+  <br />
+</p>
+
+[Coolero](https://gitlab.com/coolero/coolero) is a program to monitor and control your cooling devices. It offers an easy-to-use user interface with various control features and also provides live thermal performance details.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189784926-67102123-7bb4-4ccd-9fde-c499780c45e5.gif">
+  <br />
+</p>
+ 
+[Piper](https://github.com/libratbag/piper/) is a frontend GTK application to configure gaming devices(mainly Gaming Mice).
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189784915-770052d0-7764-41d8-8501-1b4404e716a3.png">
+  <br />
+</p>
+ 
+[StreamDeck-UI](https://timothycrosley.github.io/streamdeck-ui/) is a Linux compatible UI for the [Elgato Stream Deck](https://www.elgato.com/en/stream-deck).
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189784917-512c6757-4cc5-41bb-b9bb-9b1cd3500255.gif">
+  <br />
+</p>
+ 
+[Asusctl](https://asus-linux.org/) is a control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/189784927-21208072-450e-4018-a613-3e3156535cc4.png">
+  <br />
+</p>
+
+[MangoHud](https://github.com/flightlessmango/MangoHud) is a Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
+
+[GOverlay](https://github.com/benjamimgois/goverlay) is an open source project aimed to create a Graphical UI to manage Vulkan/OpenGL overlays. It is still in early development.
 
 ## Performance Benchmarks
-[Back to the Top](https://github.com/mikeroyal/Perfect-Ubuntu-Guide#table-of-contents)
+[Back to the Top](#table-of-contents)
 
 [Geekbench 5](https://www.geekbench.com/download/) is a cross-platform benchmark that measures your system's performance with the press of a button.
 
@@ -550,20 +867,15 @@ wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
 [UNIGINE Superposition](https://benchmark.unigine.com/superposition) is an extreme performance and stability test for PC hardware: video card, power supply, cooling system.
 
 <img src="https://user-images.githubusercontent.com/45159366/107092007-8f8d2480-67b7-11eb-9c3f-a0cb02e6dfcd.png">
- 
+
 ## Wine
+[Back to the Top](#table-of-contents)
 
 [WINE(Wine Is Not an Emulator)](https://www.winehq.org) is a compatibility layer capable of running Windows applications on several POSIX-compliant operating systems, such as Linux, macOS, & BSD. Instead of simulating internal Windows logic like a virtual machine or emulator, Wine translates Windows API calls into POSIX calls on-the-fly, eliminating the performance and memory penalties of other methods and allowing you to cleanly integrate Windows applications into your desktop.
 
-## Winetricks
+### Winetricks
 
-[Winetricks](https://github.com/Winetricks/winetricks) is an easy way to work around problems in Wine.
-
-this is needed to avoid adobeair error
-```sh
-sudo sed -i 's|echo "\${arg%%=\*}"=\\""${arg### \*=}"\\"|echo \${arg%%=\*}=\\"\${arg### \*=}\\"|g' /usr/local/bin/winetricks
-sudo apt install cabextract libncurses5:armhf
-```
+[Winetricks](https://github.com/Winetricks/winetricks) is an easy way to work around problems in Wine. 
 
 # Game Development
 
