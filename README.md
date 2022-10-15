@@ -41,6 +41,7 @@
    - [Epic Games Store](#epic-games-store)
    - [Game Streaming](#game-streaming)
    - [Game Emulators](#game-emulators)
+   - [Running Windows games with Bottles](#running-windows-games-with-bottles)
    - [Hardware Performance(CPU, GPU, Gaming Peripherals)](#hardware-performancecpu-gpu-gaming-peripherals)
         * [NVIDIA](#NVIDIA)
         * [AMD](#AMD)
@@ -716,6 +717,14 @@ Open your terminal and enter:
    - [r/EmuDev](https://www.reddit.com/r/EmuDev/)
    - [r/Roms](https://www.reddit.com/r/Roms/)
 
+## Running Windows games with Bottles
+[Back to the Top](#table-of-contents)
+
+[Bottles](https://usebottles.com/) is a software tool that let's you run Windows software on Linux. It's built-in dependency installation system grants automatic software compatibility access. The download manager can download the official components such as: the runner (Wine, Proton), DXVK, dependencies, etc. Available on [FlatHub](https://flathub.org/apps/details/com.usebottles.bottles).
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/182049940-ccba08e7-b05d-4991-b36f-1e2596c390da.png">
+ </p>
 
 ## Hardware Performance(CPU, GPU, Gaming Peripherals)
 [Back to the Top](#table-of-contents)
