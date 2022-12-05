@@ -28,6 +28,8 @@
    - [Upgrading the Linux Kernel](#Upgrading-the-Linux-Kernel)
    - [Setting up OBS Studio](#Setting-up-OBS-Studio)
       * [Useful OBS Studio 3rd party Plugins & Themes](#useful-obs-studio-3rd-party-plugins-and-themes)    
+   - [Discord](#Discord)
+   - [Game Controllers](#Game-Controllers)
    - [Steam](#steam)
    - [ProtonDB](#protondb)
    - [Lutris](#lutris)
@@ -494,6 +496,48 @@ Lastly, reboot your Ubuntu system so that it can take changes from the new kerne
   * **[Virtual Cam Filter](https://github.com/exeldro/obs-virtual-cam-filter)** plugin; make sources available to the virtual camera via a filter
   * **[VNC Source](https://github.com/norihiro/obs-vnc)** plugin; VNC viewer that works as a source.
   * **[Websockets](https://github.com/Palakis/obs-websocket)** plugin; remote-control OBS Studio through WebSockets, compatible with [StreamControl](https://play.google.com/store/apps/details?id=dev.t4ils.obs_remote&hl=en).  
+  
+## Discord
+
+[Back to the Top](#table-of-contents)
+
+[Discord](https://discord.com/) is an application with modern voice & text chat app. It provides clear voice, multiple server and channel support, mobile apps, and more. It's available on Linux, macOS, Windows, iOS, Android, and your web browser. [Flatpak verion](https://flathub.org/apps/details/com.discordapp.Discord) or [Snap version](https://snapcraft.io/discord).
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/45159366/203752975-d489f776-2039-474d-82ce-1cdd3dcdeff7.png">
+</p>
+
+## Controllers
+
+[Back to Top](#steam-deck-accessories)
+
+[Xbox Wireless Controller + USB-C® Cable](https://www.xbox.com/en-us/accessories/controllers/xbox-wireless-controller-usb-c)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/45159366/187094245-3c406751-4e4b-42fd-bd2c-a72181722fad.png">
+  <br />
+    Xbox Controller
+</p>
+
+[PlayStation 5 DualSense™ Wireless Controller](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)
+
+* [Update the wireless controller firmware](https://controller.dl.playstation.net/controller/lang/gb/fwupdater.html)
+
+**Note:** make sure to use [Bottles](https://usebottles.com/) to run this firmware update.
+ 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/45159366/187094347-109c80cd-5cc3-4a97-8a8f-0181687ab0d4.png">
+  <br />
+    PS 5  DualSense™ Controller
+</p>
+
+[Nintendo Switch Pro Controller](https://www.amazon.com/Nintendo-Switch-Pro-Controller/dp/B01NAWKYZ0)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/45159366/194023448-09e74efa-67f8-4503-87f5-5b7e59289608.png">
+  <br />
+    Nintendo Switch Pro Controller
+</p>
 
 ## Steam
 [Back to the Top](#table-of-contents)
