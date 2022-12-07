@@ -29,7 +29,7 @@
    - [Setting up OBS Studio](#Setting-up-OBS-Studio)
       * [Useful OBS Studio 3rd party Plugins & Themes](#useful-obs-studio-3rd-party-plugins-and-themes)    
    - [Discord](#Discord)
-   - [Game Controllers](#Game-Controllers)
+   - [Game Controllers](#Controllers)
    - [Steam](#steam)
    - [ProtonDB](#protondb)
    - [Lutris](#lutris)
