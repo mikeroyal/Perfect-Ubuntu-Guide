@@ -9,7 +9,7 @@
 **Note: You can easily convert this markdown file to a PDF in [VSCode](https://code.visualstudio.com/) using this handy extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/145649402-7426398e-a880-4d7f-9a0c-ffd625018847.png">
+ <img src="https://user-images.githubusercontent.com/45159366/205710053-c8df613d-8591-4686-9840-5f47f0b565e9.jpeg">
   <br />
 </p>
 
