@@ -1,5 +1,5 @@
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/45159366/106686312-ef4cbb00-657e-11eb-92d5-93d7d39b4cf6.png">
+ <img src="https://user-images.githubusercontent.com/45159366/205710045-9c9fa199-04e5-4aaf-8731-af80d7a6087e.png">
   <br />
   Ubuntu Guide
 </h1>
