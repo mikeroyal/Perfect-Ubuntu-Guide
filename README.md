@@ -509,7 +509,7 @@ Lastly, reboot your Ubuntu system so that it can take changes from the new kerne
 
 ## Controllers
 
-[Back to Top](#steam-deck-accessories)
+[Back to Top](#table-of-contents)
 
 [Xbox Wireless Controller + USB-C® Cable](https://www.xbox.com/en-us/accessories/controllers/xbox-wireless-controller-usb-c)
 
