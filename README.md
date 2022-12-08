@@ -507,6 +507,8 @@ Lastly, reboot your Ubuntu system so that it can take changes from the new kerne
   <img src="https://user-images.githubusercontent.com/45159366/203752975-d489f776-2039-474d-82ce-1cdd3dcdeff7.png">
 </p>
 
+[Discord-ScreenAudio](https://flathub.org/apps/details/de.shorsh.discord-screenaudio) is a custom discord client that supports streaming with audio on Linux, made possible by the great work of @edisionnano and the Rohrkabel library by @Curve.
+
 ## Controllers
 
 [Back to Top](#table-of-contents)
