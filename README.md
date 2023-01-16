@@ -1,5 +1,5 @@
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/45159366/205710045-9c9fa199-04e5-4aaf-8731-af80d7a6087e.png">
+ <img src="https://user-images.githubusercontent.com/45159366/212644862-af3fdae2-dec3-4aa1-8b37-35dbff75d105.png">
   <br />
   Ubuntu Guide
 </h1>
@@ -9,7 +9,7 @@
 **Note: You can easily convert this markdown file to a PDF in [VSCode](https://code.visualstudio.com/) using this handy extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).**
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/45159366/205710053-c8df613d-8591-4686-9840-5f47f0b565e9.jpeg">
+ <img src="https://user-images.githubusercontent.com/45159366/212644871-f101bda2-01f0-495a-8e94-b5ccf468a629.png">
   <br />
 </p>
 
