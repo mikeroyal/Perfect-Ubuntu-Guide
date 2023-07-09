@@ -376,7 +376,7 @@ sudo apt install gnome-software-plugin-flatpak
 
 [FlatHub Forum](https://discourse.flathub.org/)
 
- <img src="https://user-images.githubusercontent.com/45159366/106686365-055a7b80-657f-11eb-9b58-1de28abe2e5b.png">
+ <img src="https://github.com/mikeroyal/Perfect-Ubuntu-Guide/assets/45159366/be0afa89-27ac-4d05-bd78-c628cfe4444a">
 
 ## AppImages
 
