@@ -177,6 +177,8 @@ Q
 
 R
 
+[Restricted unprivileged user namespaces](https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces) are a feature of the kernel that can be used to replace many of the uses of setuid and setguid programs (setting user identity and group identity), and allow for applications to create more secure sandboxes. However, they expose kernel interfaces that are normally restricted to processes with privileged capabilities **(root)** to use by unprivileged users.
+
 [ReplaySorcery](https://github.com/matanui159/ReplaySorcery) is an open-source, instant-replay solution for Linux.
 
 [RetroPie](https://retropie.org.uk/) is a frontend for emulators that allows you to turn your Raspberry Pi, ODroid C1/C2, or PC into a retro-gaming machine.
