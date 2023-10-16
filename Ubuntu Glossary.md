@@ -34,6 +34,8 @@ C
 
 [Canonical](https://canonical.com) makers of Ubuntu Desktop and Server.
 
+[chronyd](https://www.redhat.com/sysadmin/chrony-time-services-linux) is a daemon which runs in background on the system. It obtains measurements (via the network) of the system's offset relative to other systems, and adjusts the system time accordingly.
+
 [Citra](https://citra-emu.org/) is an open-source emulator for the Nintendo 3DS capable of playing many of your favorite games.
 
 [Chiaki](https://git.sr.ht/~thestr4ng3r/chiaki) is a Free and Open Source Software Client for PlayStation 4 and PlayStation 5 Remote Play 
@@ -190,6 +192,8 @@ R
 
 S
 
+[Snap](https://snapcraft.io/) is an application containerized with all its dependencies. A snap can be installed using a single command on any device running Linux.
+
 [Snap Store](https://snapcraft.io/store) is a build and distribution service for Snap applications.
 
 [systemd](https://systemd.io/) is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system. 
@@ -216,9 +220,11 @@ U
 
 [Ubuntu](https://ubuntu.com/) is a modern open source operating system on Linux for the enterprise Server, Desktop, Cloud, and IoT developed by Canonical.
 
-[Ubuntu OpenStack](https://ubuntu.com/openstack)is the #1 platform for [OpenStack](https://www.openstack.org/) and the #1 platform for public cloud operations on [AWS](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/) and [Google Cloud](https://cloud.google.com/).
+[Ubuntu Core](https://ubuntu.com/core) is a secure and minimal version of Ubuntu that is designed for IoT and embedded systems. Ubuntu Core updates itself and its applications automatically using [snap packages](https://snapcraft.io/store) exclusively to create a confined-based system.
 
-[Ubuntu on WSL](https://wiki.ubuntu.com/WSL) is a wiki guide on getting started with the latest version of Ubuntu installed and setup on WSL for Windows 10.
+[Ubuntu OpenStack](https://ubuntu.com/openstack) is the #1 platform for [OpenStack](https://www.openstack.org/) and the #1 platform for public cloud operations on [AWS](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/) and [Google Cloud](https://cloud.google.com/).
+
+[Ubuntu on WSL](https://wiki.ubuntu.com/WSL) is a wiki guide on getting started with the latest version of Ubuntu installed and setup on WSL for Windows 10/11.
 
 [Ubuntu Pro for Azure](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/canonical.0001-com-ubuntu-pro-focal?tab=Overview) is a premium image designed by Canonical optimized for production environments running on Azure. It includes security and compliance services, enabled by default, in a form suitable for small to large-scale Linux enterprise operations with no contract needed. 
 
