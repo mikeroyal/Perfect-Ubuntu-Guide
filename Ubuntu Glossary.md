@@ -177,6 +177,8 @@ P
 
 Q
 
+[Qt](https://www.qt.io/) is a cross-platform application development framework for desktop, embedded and mobile. Supported Platforms include Linux, MacOS, Windows, Android, and iOS.
+
 R
 
 [Restricted unprivileged user namespaces](https://ubuntu.com/blog/ubuntu-23-10-restricted-unprivileged-user-namespaces) are a feature of the kernel that can be used to replace many of the uses of setuid and setguid programs (setting user identity and group identity), and allow for applications to create more secure sandboxes. However, they expose kernel interfaces that are normally restricted to processes with privileged capabilities **(root)** to use by unprivileged users.
