@@ -210,6 +210,8 @@ S
 
 T
 
+[Trusted Platform Module (TPM) full-disk encryption](https://ubuntu.com/blog/tpm-backed-full-disk-encryption-is-coming-to-ubuntu) is a featire where passphrases will no longer be needed on supported platforms, and that the secret used to decrypt the encrypted data will be protected by a TPM and recovered automatically only by early boot software that is authorised to access the data. 
+
 U
 
 [Ubuntu](https://ubuntu.com/) is a modern open source operating system on Linux for the enterprise Server, Desktop, Cloud, and IoT developed by Canonical.
