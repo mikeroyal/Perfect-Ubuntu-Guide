@@ -242,6 +242,8 @@ V
 
 W
 
+[Warehouse](https://github.com/flattool/warehouse) is a versatile toolbox for viewing flatpak info, managing user data, and batch managing installed flatpaks. [Flatpak version](https://flathub.org/apps/io.github.flattool.Warehouse)
+
 [Warpinator](https://github.com/linuxmint/warpinator) is a free, open-source tool for sending and receiving files between computers that are on the same network.
 
 [Waydroid](https://github.com/waydroid/waydroid) is a container-based approach to boot a full Android system on a regular Linux system.
